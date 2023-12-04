@@ -5,7 +5,7 @@ import {
 } from "@app/lib/localStorage";
 import { useEffect, useState } from "react";
 
- const appMenuKey = "appMenuKey";
+const appMenuKey = "appMenuKey";
 
 const appList: { name: string; icon: string }[] = [
   { name: "Marine", icon: "carbon:marine-warning" },
