@@ -37,17 +37,17 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                 hideSidebar ? "hidden" : "hidden md:block"
               }`}
             >
-              INSURANCE HUB
+              MOTOR INSURANCE
             </span>
           </a>
           <Divider className="mt-2 bg-gray-200 mx-4" />
-          <div className="pt-3">
+          {/* <div className="pt-3">
             <AppServices
               appList={appList}
               setActiveMenu={setActiveAppMenu}
               activeMenu={activeMenu}
             />
-          </div>
+          </div> */}
           <div className="mt-5 h-full overflow-y-auto flex-grow">
             <Sidebar menuItems={menuItems} hideSidebar={hideSidebar} />
           </div>
@@ -63,7 +63,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                 <BreadCrumb options={$breadCrumb} {activeBreadCrumb} on:click={optionClicked} />
               </div>
             </div> */}
-            <div className=" w-full h-full flex-grow overflow-hidden px-6 pt-4">
+            <div className=" w-full h-full flex-grow overflow-hidden px-3 pt-4 pb-2">
               {children}
             </div>
           </section>

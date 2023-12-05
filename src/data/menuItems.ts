@@ -8,16 +8,16 @@ export const marineMenuItems = [
         path: "/private/marine/dashboard",
       },
       {
-        title: "Underwriting",
+        title: "Claims",
         icon: "la:edit-solid",
         items: [
           {
-            title: "Single Transit Policies",
-            path: "/private/marine/underwriting/single_transit_policies",
+            title: "All Claims",
+            path: "/private/marine/claims/all-claims",
           },
           {
-            title: "Double Cover Policies",
-            path: "/private/marine/underwriting/double_cover_policies",
+            title: "New Claims",
+            path: "/private/marine/claims/new-claims",
           },
         ],
       },
