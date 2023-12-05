@@ -86,7 +86,7 @@ const Table: React.FC<ITable> = ({
           </div>
         </div>
       </div>
-      <DataTable columns={columns} data={tableData} pagination />
+      <DataTable columns={columns} data={tableData} pagination striped/>
       <SideModal
         open={state.openSideModal}
         closeModal={toggleSideModal}

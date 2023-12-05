@@ -26,6 +26,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/private/marine/customer_mgt/customers/page.js"
+    ],
+    "/private/marine/dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/private/marine/dashboard/page.css",
+      "static/chunks/app/private/marine/dashboard/page.js"
     ]
   }
 }
