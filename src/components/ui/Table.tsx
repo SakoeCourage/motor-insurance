@@ -1,36 +1,17 @@
 "use client";
 
 import React, { useReducer } from "react";
-import DataTable from "react-data-table-component";
+import DataTable, { TableColumn } from "react-data-table-component";
 import TableSearchbox from "./tableSearchbox";
 import { Button } from "./button";
 import SideModal from "./sideModal";
 import { ContentSize } from "@app/types/appTypes";
 import AlertModal from "../alerts/alertModal";
+import TableFilter from "./tableFilter";
 
-const columns = [
-  {
-    name: "Title",
-    selector: (row: any) => row.title,
-  },
-  {
-    name: "Year",
-    selector: (row: any) => row.year,
-  },
-];
 
-const data = [
-  {
-    id: 1,
-    title: "Beetlejuice",
-    year: "1988",
-  },
-  {
-    id: 2,
-    title: "Ghostbusters",
-    year: "1984",
-  },
-];
+
+export type DataRow = Record<string, any>;
 
 interface ITable {
   addNewRecordLabel?: string;
@@ -41,6 +22,8 @@ interface ITable {
   searchPlaceholder?: string;
   showAddButton?: boolean;
   showSearchBox?: boolean;
+  columns: TableColumn<DataRow>[];
+  tableData: DataRow[];
 }
 
 const Table: React.FC<ITable> = ({
@@ -52,6 +35,8 @@ const Table: React.FC<ITable> = ({
   searchPlaceholder = "Search...",
   showAddButton = true,
   showSearchBox = true,
+  columns,
+  tableData = [],
 }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -74,7 +59,7 @@ const Table: React.FC<ITable> = ({
   };
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col gap-3">
       <div className="flex justify-between">
         <div className={`flex-grow max-w-md ${!showSearchBox && "hidden"}`}>
           <TableSearchbox placeholder={searchPlaceholder} />
@@ -91,6 +76,7 @@ const Table: React.FC<ITable> = ({
               refresh={fetchData}
             /> */}
           </div>
+          <TableFilter />
           <div className={`${!showAddButton && "hidden"}`}>
             <Button
               variant="primary"
@@ -100,7 +86,7 @@ const Table: React.FC<ITable> = ({
           </div>
         </div>
       </div>
-      <DataTable columns={columns} data={data} />
+      <DataTable columns={columns} data={tableData} pagination />
       <SideModal
         open={state.openSideModal}
         closeModal={toggleSideModal}

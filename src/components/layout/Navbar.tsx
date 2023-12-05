@@ -34,7 +34,7 @@ const Navbar: React.FC<INavbar> = ({ toggleSidebar, hideSidebar }) => {
       <div className="flex items-center gap-4">
         <div className="user grid place-content-center">
           <div />
-          <DropdownMenu>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger>
               <AvatarButton
                 user={{
@@ -53,7 +53,7 @@ const Navbar: React.FC<INavbar> = ({ toggleSidebar, hideSidebar }) => {
                 <DropdownMenuItem>Subscription</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenuTrigger>
-          </DropdownMenu>
+          </DropdownMenu> */}
           {/* <DropDown open={openUserDropdown} /> */}
           {/* 
 			<Dropdown otherClasses="mt-2" open={showUser}>

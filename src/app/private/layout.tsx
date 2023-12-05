@@ -63,7 +63,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                 <BreadCrumb options={$breadCrumb} {activeBreadCrumb} on:click={optionClicked} />
               </div>
             </div> */}
-            <div className=" w-full h-full flex-grow overflow-hidden px-3 pt-4 mb-2">
+            <div className=" w-full h-full flex-grow overflow-hidden px-4 pt-4 mb-2">
               {children}
             </div>
           </section>

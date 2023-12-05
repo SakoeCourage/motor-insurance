@@ -6,11 +6,13 @@ import SelectField from "@app/components/forms/SelectField";
 import TextAreaField from "@app/components/forms/TextAreaField";
 import ScrollSection from "@app/components/ui/scrollSection";
 import React from "react";
+import * as z from "zod";
 
+const schema = z.object({});
 const page = () => {
   return (
     <ScrollSection className="px-4 h-full bg-white py-4 shadow shadow-gray-400">
-      <Form className="flex flex-col gap-6">
+      <Form className="flex flex-col gap-6" initialValues={{}} schema={schema}>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col gap-3">
             <p className="text-xl border-b text-teal-500">
@@ -134,7 +136,11 @@ const page = () => {
             <SelectField name="currency" label="Currency" options={[]} />
             <DateInput name="settle_date" label="Settle Date" />
             <DateInput name="discharge_date" label="Discharge Date" />
-            <SelectField name="settlement" label="Settlement Type" options={[]} />
+            <SelectField
+              name="settlement"
+              label="Settlement Type"
+              options={[]}
+            />
           </div>
         </div>
       </Form>

@@ -1,10 +1,12 @@
 import React from "react";
 import IconifyIcon from "../icon";
+import { cn } from "@app/lib/utils";
 
 interface IIconButton {
   icon: string;
   color: "success" | "primary" | "ghost" | "warning" | "default";
   size?: number;
+  className?: string;
   onClick?: () => void;
 }
 const kind = {
@@ -20,14 +22,18 @@ const IconButton: React.FC<IIconButton> = ({
   color = "default",
   size = 20,
   onClick,
+  className,
 }) => {
   return (
     <button
       onClick={onClick}
-      className={`p-2 grid place-content-center rounded-full ${kind[color]}`}
+      className={cn(
+        `p-2 grid place-content-center rounded-full ${kind[color]}`,
+        className
+      )}
       type="button"
     >
-      <IconifyIcon icon={icon} />
+      <IconifyIcon icon={icon} fontSize={size} />
     </button>
   );
 };
