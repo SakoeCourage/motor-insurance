@@ -9,7 +9,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <ScrollSection className="px-2 h-full">
+    <ScrollSection className="px-4 h-full bg-white py-4 shadow shadow-gray-400">
       <Form className="flex flex-col gap-6">
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col gap-3">
