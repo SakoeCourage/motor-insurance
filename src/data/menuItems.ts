@@ -22,6 +22,20 @@ export const marineMenuItems = [
         ],
       },
       {
+        title: "Intermediaries",
+        icon: "la:edit-solid",
+        items: [
+          {
+            title: "All Intermediary",
+            path: "/private/marine/intermediaries",
+          },
+          {
+            title: "Add intermediary",
+            path: "/private/marine/intermediaries/add",
+          },
+        ],
+      },
+      {
         title: "Reporting",
         icon: "carbon:report",
         items: [

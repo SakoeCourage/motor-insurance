@@ -48,7 +48,7 @@ const Table: React.FC<ITable> = ({
         dispatch({ type: "SET_EDITOR_HEADING", payload: addNewRecordLabel });
       dispatch({ type: "TOGGLE_SIDE_MODAL", payload: !state.openSideModal });
     } else {
-      addButtonFunction;
+      addButtonFunction && addButtonFunction();
     }
   };
 

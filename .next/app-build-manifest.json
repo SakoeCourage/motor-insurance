@@ -42,6 +42,26 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/private/marine/claims/all-claims/page.js"
+    ],
+    "/private/marine/customer_mgt/customers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/customer_mgt/customers/page.js"
+    ],
+    "/private/marine/institution_mgt/institution_types/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/institution_mgt/institution_types/page.js"
+    ],
+    "/private/marine/intermediaries/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/intermediaries/page.js"
+    ],
+    "/private/marine/intermediaries/add/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/intermediaries/add/page.js"
     ]
   }
 }
