@@ -1,4 +1,4 @@
-// File: /Users/kobby/Desktop/codes/Efactum/web/motor-insurance/src/app/private/marine/claims/new-claims/page.tsx
+// File: /home/jhaystark/Documents/motor-insurance/src/app/private/marine/claims/new-claims/page.tsx
 import * as entry from '../../../../../../../src/app/private/marine/claims/new-claims/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
