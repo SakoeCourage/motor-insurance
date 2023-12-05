@@ -9,19 +9,20 @@ import { ContentSize } from "@app/types/appTypes";
 import AlertModal from "../alerts/alertModal";
 import TableFilter from "./tableFilter";
 
-
-
 export type DataRow = Record<string, any>;
 
 interface ITable {
   addNewRecordLabel?: string;
   addButtonLabel?: string;
+  addButtonFunction?: () => void;
   updateRecordLabel?: string;
   sideModalSize?: ContentSize;
   Editor?: any;
   searchPlaceholder?: string;
   showAddButton?: boolean;
   showSearchBox?: boolean;
+  // renderFormInTable?: boolean;
+
   columns: TableColumn<DataRow>[];
   tableData: DataRow[];
 }
@@ -37,13 +38,18 @@ const Table: React.FC<ITable> = ({
   showSearchBox = true,
   columns,
   tableData = [],
+  addButtonFunction,
 }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const toggleSideModal = () => {
-    if (!state.openSideModal)
-      dispatch({ type: "SET_EDITOR_HEADING", payload: addNewRecordLabel });
-    dispatch({ type: "TOGGLE_SIDE_MODAL", payload: !state.openSideModal });
+    if (Editor) {
+      if (!state.openSideModal)
+        dispatch({ type: "SET_EDITOR_HEADING", payload: addNewRecordLabel });
+      dispatch({ type: "TOGGLE_SIDE_MODAL", payload: !state.openSideModal });
+    } else {
+      addButtonFunction;
+    }
   };
 
   const toggleAlertModal = () => {
@@ -86,7 +92,13 @@ const Table: React.FC<ITable> = ({
           </div>
         </div>
       </div>
-      <DataTable columns={columns} data={tableData} pagination striped/>
+      <DataTable
+        columns={columns}
+        data={tableData}
+        pagination
+        striped
+        responsive
+      />
       <SideModal
         open={state.openSideModal}
         closeModal={toggleSideModal}
