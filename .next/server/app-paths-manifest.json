@@ -1,6 +1,6 @@
 {
-  "/private/marine/claims/all-claims/page": "app/private/marine/claims/all-claims/page.js",
   "/private/marine/claims/new-claims/page": "app/private/marine/claims/new-claims/page.js",
-  "/private/marine/customer_mgt/customers/page": "app/private/marine/customer_mgt/customers/page.js",
-  "/private/marine/dashboard/page": "app/private/marine/dashboard/page.js"
+  "/private/marine/dashboard/page": "app/private/marine/dashboard/page.js",
+  "/private/marine/reporting/cancelled_policies/page": "app/private/marine/reporting/cancelled_policies/page.js",
+  "/private/marine/claims/all-claims/page": "app/private/marine/claims/all-claims/page.js"
 }

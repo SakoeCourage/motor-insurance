@@ -793,6 +793,18 @@ video {
 .w-screen {
   width: 100vw;
 }
+.w-\[100px\] {
+  width: 100px;
+}
+.w-\[400px\] {
+  width: 400px;
+}
+.w-\[300px\] {
+  width: 300px;
+}
+.w-\[200px\] {
+  width: 200px;
+}
 .min-w-\[8rem\] {
   min-width: 8rem;
 }
@@ -1170,10 +1182,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 .font-bold {
   font-weight: 700;

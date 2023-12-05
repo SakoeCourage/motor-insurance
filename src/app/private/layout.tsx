@@ -30,15 +30,15 @@ const layout = ({ children }: { children: React.ReactNode }) => {
               src={LogoUrl}
               alt="logo"
               loading="lazy"
-              className={hideSidebar ? "w-10" : "w-[80px]"}
+              className={hideSidebar ? "w-10" : "w-[200px]"}
             />
-            <span
+            {/* <span
               className={`font-medium text-[16px]  ${
                 hideSidebar ? "hidden" : "hidden md:block"
               }`}
             >
               MOTOR INSURANCE
-            </span>
+            </span> */}
           </a>
           <Divider className="mt-2 bg-gray-200 mx-4" />
           {/* <div className="pt-3">
