@@ -1,5 +1,10 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -11,27 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/private/layout.js"
     ],
-    "/private/marine/claims/all-claims/page": [
+    "/private/marine/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/private/marine/claims/all-claims/page.js"
-    ],
-    "/private/marine/claims/new-claims/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/private/marine/claims/new-claims/page.css",
-      "static/chunks/app/private/marine/claims/new-claims/page.js"
+      "static/chunks/app/private/marine/dashboard/page.js"
     ],
     "/private/marine/customer_mgt/customers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/private/marine/customer_mgt/customers/page.js"
     ],
-    "/private/marine/dashboard/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/private/marine/dashboard/page.css",
-      "static/chunks/app/private/marine/dashboard/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

@@ -1,6 +1,7 @@
 {
-  "/private/marine/claims/all-claims/page": "app/private/marine/claims/all-claims/page.js",
-  "/private/marine/claims/new-claims/page": "app/private/marine/claims/new-claims/page.js",
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/private/marine/customer_mgt/customers/page": "app/private/marine/customer_mgt/customers/page.js",
   "/private/marine/dashboard/page": "app/private/marine/dashboard/page.js"
 }
