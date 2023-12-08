@@ -505,6 +505,19 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+@media (min-width: 1400px) {
+
+  .container {
+    max-width: 1400px;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -647,6 +660,15 @@ video {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.\!mt-4 {
+  margin-top: 1rem !important;
 }
 .block {
   display: block;
