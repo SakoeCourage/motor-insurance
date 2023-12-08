@@ -1,9 +1,14 @@
 {
   "pages": {
-    "/page": [
+    "/private/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/private/layout.js"
+    ],
+    "/private/marine/customer_mgt/customers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/customer_mgt/customers/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,25 +16,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/private/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/private/layout.js"
-    ],
     "/private/marine/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/private/marine/dashboard/page.js"
-    ],
-    "/private/marine/customer_mgt/customers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/private/marine/customer_mgt/customers/page.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
     ]
   }
 }
