@@ -1,66 +1,52 @@
-"use client";
-import DateField from "@app/components/forms/DateField";
-import Form from "@app/components/forms/Form";
-import InputField from "@app/components/forms/InputField";
-import SelectField from "@app/components/forms/SelectField";
 import React from "react";
-import * as z from "zod";
+import StatsCard from "@app/components/ui/dashboard/StatsCard";
+import StickerPurchase from "@app/components/ui/dashboard/StickerPurchase";
+import MotorPolicyStatsCard from "@app/components/ui/dashboard/MotorPolicyStatsCard";
 
-const gender = [
-  { value: "male", label: "Male" },
-  { value: "female", label: "Female" },
-  { value: "other", label: "Other" },
+const statsCards = [
+  {
+    mainHeader: { title: "Total Insured", value: 11 },
+    leftHeader: { title: "Individuals", value: 10 },
+    rightHeader: { title: "Institutions", value: 5 },
+  },
+  {
+    mainHeader: { title: "Total Policies", value: 203 },
+    leftHeader: { title: "Active", value: 100 },
+    rightHeader: { title: "Pending", value: 103 },
+  },
+  {
+    mainHeader: { title: "Expiring Policies (today)", value: 2 },
+    leftHeader: { title: "Tomorrow", value: 1 },
+    rightHeader: { title: "In a month", value: 6 },
+  },
 ];
 
-const initialValues = {
-  name: "",
-  email: "",
-  gender: "",
-  dob: "",
-};
-const schema = z.object({
-  name: z
-    .string()
-    .min(1, "Name is required")
-    .min(3, "Enter a valid name")
-    .max(7, "Name too long"),
-  email: z.string().min(1, "Email is required").email(),
-  gender: z.string().min(1, "Gender is required"),
-  dob: z.string().min(1, "Date of Birth is required"),
-});
-const page = () => {
+const page1 = () => {
   return (
-    <div className="px-4">
-      <Form
-        initialValues={initialValues}
-        schema={schema}
-        className="space-y-4"
-        onChange={(a, b) => console.log(a, b)}
-      >
-        <InputField
-          name="name"
-          label="Name"
-          required
-          placeholder="Enter name"
-        />
-        <InputField
-          name="email"
-          label="Email"
-          required
-          placeholder="Enter email"
-        />
-        <SelectField name="gender" label="Gender" options={gender} required />
-        <DateField label="Date of Birth" name="dob" required />
+    <div className="!overflow-scroll mb-20">
+      {/* Statistics Cars */}
+      <div className="statsCArdContainer flex justify-between pr-">
+        {statsCards.map((el) => (
+          <StatsCard
+            mainHeader={el.mainHeader}
+            leftHeader={el.leftHeader}
+            rightHeader={el.rightHeader}
+          />
+        ))}
+      </div>
 
-        <button type="submit" className="bg-red-300">
-          Click
-        </button>
-        <button type="reset" className="bg-red-300">
-          Reset
-        </button>
-      </Form>
+      {/* lower sections */}
+      <section className="lowerSections mt-10 grid grid-cols-3  gap-12 min-h-fit !overflow-scroll">
+        {/* sticker purchase */}
+        <div className="stickerPurchaseTable col-span-2">
+          <StickerPurchase />
+        </div>
+
+        {/* motor policy card */}
+        <MotorPolicyStatsCard />
+      </section>
     </div>
   );
 };
 
-export default page;
+export default page1;
