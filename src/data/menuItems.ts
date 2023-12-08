@@ -36,6 +36,28 @@ export const marineMenuItems = [
         ],
       },
       {
+        title: "Policies",
+        icon: "la:edit-solid",
+        items: [
+          {
+            title: "All",
+            path: "/private/marine/policies/all",
+          },
+          {
+            title: "Expiring",
+            path: "/private/marine/policies/expiring",
+          },
+          {
+            title: "New",
+            path: "/private/marine/policies/new",
+          },
+          {
+            title: "All Ncd",
+            path: "/private/marine/policies/all-ncd",
+          },
+        ],
+      },
+      {
         title: "Reporting",
         icon: "carbon:report",
         items: [

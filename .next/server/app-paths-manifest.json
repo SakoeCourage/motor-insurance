@@ -1,1 +1,5 @@
-{}
+{
+  "/private/marine/policies/all/page": "app/private/marine/policies/all/page.js",
+  "/private/marine/policies/new/page": "app/private/marine/policies/new/page.js",
+  "/private/marine/policies/all-ncd/page": "app/private/marine/policies/all-ncd/page.js"
+}

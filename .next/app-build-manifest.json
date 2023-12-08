@@ -11,15 +11,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/private/layout.js"
     ],
-    "/private/marine/dashboard/page": [
+    "/private/marine/policies/all/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/private/marine/dashboard/page.js"
+      "static/chunks/app/private/marine/policies/all/page.js"
     ],
-    "/not-found": [
+    "/private/marine/policies/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/private/marine/policies/page.js"
+    ],
+    "/private/marine/policies/new/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/policies/new/page.js"
+    ],
+    "/private/marine/policies/all-ncd/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/private/marine/policies/all-ncd/page.js"
     ]
   }
 }
