@@ -1,8 +1,8 @@
 {
-  "/private/marine/intermediaries/page": "app/private/marine/intermediaries/page.js",
-  "/private/marine/policies/all-ncd/page": "app/private/marine/policies/all-ncd/page.js",
-  "/private/marine/reporting/pending_policies/page": "app/private/marine/reporting/pending_policies/page.js",
+  "/not-found": "app/not-found.js",
   "/private/marine/dashboard/page": "app/private/marine/dashboard/page.js",
+  "/private/marine/reporting/pending_policies/page": "app/private/marine/reporting/pending_policies/page.js",
+  "/private/marine/intermediaries/page": "app/private/marine/intermediaries/page.js",
   "/private/marine/intermediaries/add/page": "app/private/marine/intermediaries/add/page.js",
   "/private/marine/claims/all-claims/page": "app/private/marine/claims/all-claims/page.js"
 }
