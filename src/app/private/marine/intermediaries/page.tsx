@@ -29,7 +29,18 @@ const columns: TableColumn<DataRow>[] = [
   {
     name: <div className='text-lg font-medium'>Action</div>,
     selector: (row: any) => row.intNo,
-    cell: (row: any) => <FileEdit color='blue' size={18} />,
+    cell: (row: any) => {
+      const router = useRouter();
+      return (
+        <FileEdit
+          color='blue'
+          size={18}
+          onClick={() =>
+            router.push(`/private/marine/intermediaries/${row.intNo}`)
+          }
+        />
+      );
+    },
   },
 ];
 

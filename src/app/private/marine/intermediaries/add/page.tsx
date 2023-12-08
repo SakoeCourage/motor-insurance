@@ -40,7 +40,7 @@ const Page = () => {
           />
           <div className='col-span-2 gap-2'>
             <Button>Save</Button>
-            <Button variant='secondary' className='text-red-600'>
+            <Button variant='secondary' className='text-red-600 bg-white'>
               Cancel
             </Button>
           </div>

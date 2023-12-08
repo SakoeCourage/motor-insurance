@@ -1,6 +1,5 @@
 {
-  "/private/marine/claims/all-claims/page": "app/private/marine/claims/all-claims/page.js",
-  "/private/marine/intermediaries/page": "app/private/marine/intermediaries/page.js",
-  "/private/marine/intermediaries/add/page": "app/private/marine/intermediaries/add/page.js",
-  "/private/marine/claims/new-claims/page": "app/private/marine/claims/new-claims/page.js"
+  "/page": "app/page.js",
+  "/private/marine/dashboard/page": "app/private/marine/dashboard/page.js",
+  "/private/marine/page": "app/private/marine/page.js"
 }
